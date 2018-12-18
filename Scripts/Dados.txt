@@ -1,0 +1,1 @@
+Redução de 577 para 128 atributos
