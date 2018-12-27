@@ -1,14 +1,9 @@
 arq = open("attr.txt", "r") 
 names = arq.readlines()
 arq.close()
-file = open("string.txt","w")
-
-file.write('select(columns')
-
+file = open("convertCat.txt","w")
 
 for i in names:
-	file.write(', contains("' + (i.rstrip()).lower() + '")')
+	file.write('dados$' + i.rstrip() + ' <- revalue(dados$' + i.rstrip() + ', c("Unknown" = "N/A", "Refused" = "N/A"))\n')
 	
-file.write(")")
-
 file.close()

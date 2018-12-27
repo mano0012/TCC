@@ -1,14 +1,9 @@
-arq = open("attrNumericos.txt", "r") 
+arq = open("attr.txt", "r") 
 names = arq.readlines()
 arq.close()
-file = open("stringNumerica.txt","w")
-
-file.write('select(attr')
-
+file = open("convert1Numerica.txt","w")
 
 for i in names:
-	file.write(', ' + i.rstrip())
+	file.write('dados$' + i.rstrip() + ' <- revalue(dados$' + i.rstrip() + ', c("No" = 0, "Yes" = 1, "N/A" = -1, "Unknown" = -2, "Refused" = -3))\n')
 	
-file.write(")")
-
 file.close()
