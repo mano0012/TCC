@@ -1,0 +1,1 @@
+dados$clinstat <- revalue(dados$clinstat, c("Continued SXs" = 1, "Depression" = 2, "Hypomania" = 3, "Mania" = 4, "Mixed/Cycling" = 5, "Recovered" = 6, "Recovering" = 7, "Roughening" = 8, ))

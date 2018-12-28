@@ -1,0 +1,15 @@
+silnwl
+sipassiv
+siactive
+depslmin
+depslmax
+depresd
+lessint
+moodelev
+curdepr
+curenjoy
+curmania
+abnirrit
+curirrit
+abnanx
+
